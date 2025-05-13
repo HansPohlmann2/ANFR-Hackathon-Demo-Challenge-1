@@ -1,0 +1,42 @@
+[project]
+name = "estimation-attenuation"
+version = "0.1.0"
+description = "Estimation de l'atténuation de la propagation électromagnétique"
+readme = "README.md"
+requires-python = ">=3.8"
+
+authors = [
+  { name = "Mathieu Witkowski" },
+  { name = "Clément Poucet" },
+  { name = "Hans Pohlmann" }
+]
+
+license = { text = "MIT" }
+
+dependencies = [
+  "pandas",
+  "numpy",
+  "polars",
+  "scipy",
+  "tqdm",
+  "matplotlib",
+  "seaborn",
+  "scikit-learn",
+  "joblib",
+  "colorcet",
+  "datashader"
+]
+
+[project.optional-dependencies]
+dev = [
+  "black",
+  "flake8",
+  "pytest"
+]
+
+[project.urls]
+Homepage = "https://github.com/HansPohlmann2/ANFR-Hackathon-Demo-Challenge-1"
+
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
